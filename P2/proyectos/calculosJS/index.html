@@ -9,25 +9,25 @@
 </head>
 <body>
     <div id="principal">
-    <h1> .: Calculadora Básica :.</h1>
+    <h2> .: Calculadora Básica :.</h2>
     <hr>
     <form>
         <br>
         <label for="numero1">Número 1:</label>
-        <input type="number" id="n1" ><br><br>
+        <input type="number" id="n1" class="caja1" ><br><br>
 
         <label for="numero2">Número 2:</label>
-        <input type="number" id="n2" ><br><br>
+        <input type="number" id="n2" class="caja2"><br><br>
 
         <label for="operacion">Operación:</label>
-        <select id="tipo" name="tipo">
+        <select id="tipo" name="tipo" class="caja1">
             <option value="suma">Suma</option>
             <option value="resta">Resta</option>
             <option value="multiplicacion">Multiplicación</option>
             <option value="division">División</option>
         </select><br><br>
 
-        <button type="button" value="Calcular" onclick="operaciones()">Calcular</button>
+        <input type="button" value="Calcular" onclick="operaciones()" id="boton">Calcular</input>
         <br>
         <hr>
     </form>

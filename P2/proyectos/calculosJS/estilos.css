@@ -1,10 +1,13 @@
 *{
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url();
+    background-image: url(OIP.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #principal{
@@ -21,10 +24,49 @@ h2{
     font-size: 30px;
     font-weight: normal;
     font-style: italic;
+    background-color: rgba(77, 75, 75, 0.386);
 }
 
 form{
     margin-top: 2vw;
     color: white;
     text-align: center;
+}
+
+h3{
+    color: white;
+}
+
+.caja1{
+    font-size: 2vw;
+    font-weight: bolder;
+    color: black;
+    width: 10%;
+}
+
+#tipo{
+    width: auto;
+}
+
+#boton{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    padding: 2vw;
+    font-size: 2vw;
+    background-color: rgb(172, 172, 252);
+    border-radius: 10%;
+    border: 1px solid black;
+    color: black;
+}
+
+#boton:hover{
+    background-color: rgb(0, 0, 40);
+    color: white;
+    border: 1px solid black;
+}
+
+#boton:active{
+    background-color: cyan;
+    border: 1px solid cyan;
+    color: black;
 }
