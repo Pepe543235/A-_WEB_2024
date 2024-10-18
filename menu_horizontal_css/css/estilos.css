@@ -1,0 +1,66 @@
+/* Estilos del main, section y footer */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* section */
+
+section h2{
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    text-decoration:underline;
+    background-color: burlywood;
+    padding: 3rem;
+}
+
+p{
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+section img{
+    display: block;
+    width: 32rem;
+    height: 32rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section a img{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem 1rem;
+    margin-left: auto;
+}
+
+footer{
+    background-color: silver;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    display: inline-block;
+    padding: 1rem;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    border-radius: 5%;
+    height: 1rem;
+    width: auto;
+}
+
+footer a:hover{
+    background-color: red;
+}
+
+footer a:active{
+    background-color: pink;
+}
