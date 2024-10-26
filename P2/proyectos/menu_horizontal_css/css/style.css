@@ -1,0 +1,149 @@
+/* Estilos generales */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../calculosJS/OIP.jpg);
+    background-size: contain;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Hace que el body ocupe al menos el 100% de la altura de la pantalla */
+}
+
+header {
+    background: gray;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#titulo {
+    position: relative;
+    font-size: 40px; /* Ajuste para pantallas pequeñas */
+    font-weight: bold;
+    color: #FFFFFF;
+    display: inline-block;
+    margin: 0;
+}
+
+/* Estilos de main */
+main {
+    flex: 1; /* Toma el espacio disponible entre header y footer */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinea verticalmente el contenido */
+    width: 100%;
+}
+
+/* .listas {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+    box-sizing: border-box;
+} */
+
+.listas li {
+    text-align: center;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #FFFFFF;
+    transition: 0.5s all;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.listas li:hover {
+    transform: scale(1.05); /* Ligeramente más pequeño el efecto hover */
+    background-color: rgb(109, 216, 248);
+}
+
+.listas h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+
+.listas h2:hover {
+    color: rgb(255, 255, 255);
+}
+
+a{
+    font-family: Arial;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .a {
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #4d4b4b;
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #7c7c8d;
+}
+
+/* Media Queries - Responsividad */
+@media (max-width: 1024px) {
+    .listas {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas para pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .listas {
+        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
+
+    .listas li {
+        width: 100%; /* Ocupan todo el ancho disponible */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #titulo {
+        font-size: 40px;
+    }
+
+    .listas {
+        padding: 20px;
+    }
+
+    .listas li {
+        padding: 20px;
+        font-size: 18px;
+    }
+}
