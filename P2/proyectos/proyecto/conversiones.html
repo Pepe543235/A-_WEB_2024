@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <script src="calculadora.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="principal">
+    <h2> .: Conversiones :.</h2>
+    <hr>
+    <form>
+        <br>
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" class="caja1" ><br><br>
+
+        <label for="operacion">Operación:</label>
+        <select id="tipo" name="tipo" class="caja1">
+            <option value="dap">Dolares a Pesos</option>
+            <option value="pad">Pesos a Dolares</option>
+            <option value="eap">Euros a pesos</option>
+        </select><br><br>
+
+        <input type="button" value="Calcular" onclick="operaciones()" id="boton"></input>
+        <br>
+        <hr>
+    </form>
+    <div id="resultado"></div>
+    </div>
+</body>
+</html>

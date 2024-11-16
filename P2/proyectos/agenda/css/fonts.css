@@ -38,51 +38,90 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-amazon:before {
-  content: "\61";
-}
-.icon-apple:before {
-  content: "\62";
-}
-.icon-arrow-up:before {
-  content: "\63";
-}
-.icon-battery-three-quarters:before {
-  content: "\64";
-}
-.icon-calendar:before {
-  content: "\65";
-}
-.icon-cc-mastercard:before {
+.icon-facebook:before {
   content: "\66";
 }
-.icon-cc-paypal:before {
+.icon-twitter:before {
+  content: "\62";
+}
+.icon-youtube:before {
+  content: "\61";
+}
+.icon-mail:before {
+  content: "\63";
+}
+.icon-location:before {
   content: "\67";
 }
-.icon-cc-visa:before {
+.icon-phone:before {
   content: "\68";
 }
-.icon-check:before {
+.icon-monitor:before {
+  content: "\64";
+}
+.icon-amazon:before {
+  content: "\65";
+}
+.icon-arrow-up:before {
   content: "\69";
 }
-.icon-envelope:before {
+.icon-battery-three-quarters:before {
   content: "\6a";
 }
-.icon-facebook:before {
+.icon-web:before {
   content: "\6b";
 }
-.icon-phone:before {
+.icon-apple:before {
   content: "\6c";
 }
-.icon-shopping-cart:before {
+.icon-thumbs-o-up:before {
   content: "\6d";
 }
-.icon-thumbs-o-up:before {
+.icon-cc-paypal:before {
   content: "\6e";
 }
-.icon-wordpress:before {
+.icon-cc-mastercard:before {
   content: "\6f";
 }
-.icon-twitter:before {
+.icon-cc-visa:before {
   content: "\70";
+}
+.icon-shopping-cart:before {
+  content: "\71";
+}
+.icon-wordpress:before {
+  content: "\72";
+}
+.icon-calendar:before {
+  content: "\73";
+}
+.icon-check:before {
+  content: "\74";
+}
+.icon-trashcan:before {
+  content: "\76";
+}
+.icon-sign-out:before {
+  content: "\77";
+}
+.icon-sign-in:before {
+  content: "\78";
+}
+.icon-lock:before {
+  content: "\79";
+}
+.icon-file-pdf:before {
+  content: "\41";
+}
+.icon-checklist:before {
+  content: "\43";
+}
+.icon-home:before {
+  content: "\44";
+}
+.icon-key:before {
+  content: "\45";
+}
+.icon-mention:before {
+  content: "\46";
 }

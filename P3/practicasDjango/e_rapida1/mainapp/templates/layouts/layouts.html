@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% comment %} Aqui va el bloque del titulo {% endcomment %}
+        {% endblock title %}
+    </title>
+</head>
+<body>
+    <h2>Bienvenido a mi pagina</h2>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="{% url "inicio" %}">Inicio</a></li>
+            <li><a href="{% url "acercade" %}">Acerca de</a></li>
+            <li><a href="{% url "mision" %}">Misión</a></li>
+            <li><a href="{% url "vision" %}">Visión</a></li>
+        </ul>
+    </nav> 
+<hr>
+    {% block content %}
+    {% comment %} Aqui se muestra el contenido del bloque content {% endcomment %}
+    {% endblock content %}
+   
+</body>
+</html>
