@@ -5,26 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         {% block title %}
-        {% comment %} Aqui va el bloque del titulo {% endcomment %}
+        {% comment %} Aqui va el bloque del title {% endcomment %}
         {% endblock title %}
     </title>
 </head>
 <body>
-    <h1>Estoy en la pagina Inicio</h1>
-    <h2>Bienvenido a mi pagina django</h2>
-    <hr>
-    <nav>
-        <ul>
-        <li><a href="{% url "acercade" %}">Acerca de</a></li>
-        <li><a href="{% url "inicio" %}">Inicio</a></li>
-        <li><a href="{% url "mision" %}">Misión</a></li>
-        <li><a href="{% url "vision" %}">Visión</a></li>
-        </ul>
-    </nav> 
-<hr>
+    <a href="{% url 'inicio' %}">Inicio</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'mision' %}">Misión</a>
+    <a href="{% url 'vision' %}">Visión</a>
     {% block content %}
-    {% comment %} Aqui se muestra el contenido del bloque content {% endcomment %}
-    {% endblock content %}
-   
+    {% comment %} Aquí va el bloque del content {% endcomment %}
+    {% endblock content%}
 </body>
 </html>

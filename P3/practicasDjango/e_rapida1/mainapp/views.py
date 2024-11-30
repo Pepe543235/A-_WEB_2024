@@ -25,3 +25,15 @@ def vision(request):
         'title':'Visión',
         'content':'La visión de la empresa'
     })
+
+def registro(request):
+    return render(request,'mainapp/registro.html',{
+        'title':'Registro',
+        'content':'La misión de la empresa'
+    })
+
+def iniciosesion(request):
+    return render(request,'mainapp/login.html',{
+        'title':'Inicio de sesión',
+        'content':'La visión de la empresa'
+    })
